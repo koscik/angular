@@ -5,6 +5,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
 import { RouterModule } from "@angular/router";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
@@ -13,12 +14,14 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     FlexLayoutModule,
     MatInputModule,
     MatButtonModule,
+    MatIconModule,
   ],
   exports: [
     MatInputModule,
     MatButtonModule,
     RouterModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatIconModule,
   ],
   declarations: []
 })
