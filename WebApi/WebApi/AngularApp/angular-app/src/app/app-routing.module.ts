@@ -6,13 +6,12 @@ import { MainPageComponent } from "./layout/components/main-page/main-page.compo
 const routes: Routes = [
     { path: "", component: MainPageComponent },
     { path: "games", loadChildren: "./games/games.module#GamesModule" },
+    { path: "personal", loadChildren: "./personal/personal.module#PersonalModule" },
 ];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes, { useHash: false })],
     exports: [RouterModule]
 })
-export class 
-
-AppRoutingModule {
+export class AppRoutingModule {
 }
