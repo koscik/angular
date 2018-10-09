@@ -1,16 +1,25 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-toolbar color="primary" class="mat-elevation-z6">
   <mat-toolbar-row fxLayoutAlign="space-between center">
-    <span>Main page</span>
     <div>
+      <a mat-flat-button color="primary" class="nav-button" routerLink="../">Main page</a>
+      <a mat-flat-button color="primary" class="nav-button" routerLink="../personal">About me</a>
+    </div>
+
+
+    <!-- <div>
       <mat-icon class="example-icon">fingerprint</mat-icon>
       <mat-icon class="example-icon">card_giftcard</mat-icon>
       <mat-icon class="example-icon">build</mat-icon>
-    </div>
+    </div> -->
 
   </mat-toolbar-row>
 </mat-toolbar>
 
-<div>
-  <router-outlet></router-outlet>
+<div class="app-outer-container animated centerred-content">
+  <div class="app-inner-container animated">
+    <div class="router-outlet-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
