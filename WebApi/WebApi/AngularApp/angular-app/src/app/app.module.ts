@@ -10,6 +10,8 @@ import { LayoutModule } from "./layout/layout.module";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { StoreModule } from "@ngrx/store";
 import { reducers } from "./reducers-global";
+import { StoreDevtoolsModule } from "@ngrx/store-devtools";
+import { environment } from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -20,6 +22,10 @@ import { reducers } from "./reducers-global";
     BrowserAnimationsModule,
     AppRoutingModule,
     StoreModule.forRoot(reducers),
+    StoreDevtoolsModule.instrument({
+      logOnly: environment.production,
+      name: "My Store Devtools",
+    }),
     EffectsModule.forRoot([]),
     SharedModule,
     LayoutModule,
