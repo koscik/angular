@@ -1,12 +1,13 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 
 @Component({
-  selector: "app-playground",
+  selector: "papp-playground",
   templateUrl: "./playground.component.html",
-  styleUrls: ["./playground.component.scss"]
+  styleUrls: ["./playground.component.scss"],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PlaygroundComponent implements OnInit {
-
+  shouldBeGreen = true;
   constructor() { }
 
   ngOnInit() {

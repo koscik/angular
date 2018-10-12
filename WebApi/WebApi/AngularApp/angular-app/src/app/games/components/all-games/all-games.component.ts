@@ -6,7 +6,7 @@ import { Store, select } from "@ngrx/store";
 import { GetGamesList } from "../../ngrx/actions/games-list.actions";
 
 @Component({
-  selector: "app-all-games",
+  selector: "papp-all-games",
   templateUrl: "./all-games.component.html",
   styleUrls: ["./all-games.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,

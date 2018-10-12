@@ -1,6 +1,6 @@
 .grid-container {
-    height: 1000px;
-    background-color: #ddd;
+    height: 100%;
+    background-color: #795959;
     transition: all 0.2s ease-in-out;
     .grid-element {
         width: 300px;
@@ -12,6 +12,9 @@
         }
         &:last-child {
             background-color: blue;
+        }
+        &.green {
+            background-color: green;
         }
     }
 }

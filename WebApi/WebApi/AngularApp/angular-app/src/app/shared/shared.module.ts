@@ -21,6 +21,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatToolbarModule,
   ],
   exports: [
+    CommonModule,
     MatInputModule,
     MatButtonModule,
     RouterModule,

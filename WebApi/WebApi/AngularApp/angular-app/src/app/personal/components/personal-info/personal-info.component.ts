@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 
 @Component({
-  selector: "app-personal-info",
+  selector: "papp-personal-info",
   templateUrl: "./personal-info.component.html",
   styleUrls: ["./personal-info.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
