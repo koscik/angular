@@ -1,0 +1,17 @@
+.grid-container {
+    height: 1000px;
+    background-color: #ddd;
+    transition: all 0.2s ease-in-out;
+    .grid-element {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #aaa;
+        transition: all 0.2s ease-in-out;
+        &:first-child {
+            background-color: orange;
+        }
+        &:last-child {
+            background-color: blue;
+        }
+    }
+}
