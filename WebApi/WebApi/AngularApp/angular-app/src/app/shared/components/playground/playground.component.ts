@@ -8,6 +8,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 })
 export class PlaygroundComponent implements OnInit {
   shouldBeGreen = true;
+  classBindingExampleProperty = "pretty-color";
   constructor() { }
 
   ngOnInit() {
